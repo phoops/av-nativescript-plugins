@@ -728,7 +728,7 @@ export class NSCamera extends NSCameraBase {
     this._onLayoutChangeListener = this._onLayoutChangeFn.bind(this);
     this._swifty = MySwifty.initWithOwner(new WeakRef(this), this.defaultCamera);
     this._swifty.shouldUseDeviceOrientation = NSCamera.useDeviceOrientation;
-    this._detectDevice(); //TODO: is this still useful?
+    //this._detectDevice(); //TODO: is this still useful?
   }
 
   private isVideoEnabled() {
